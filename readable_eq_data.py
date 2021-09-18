@@ -1,4 +1,5 @@
 import json
+
 from plotly.graph_objects import Scattergeo, Layout
 from plotly import offline
 
