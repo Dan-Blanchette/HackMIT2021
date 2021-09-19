@@ -1,4 +1,4 @@
-# HackMIT2021 Learning How To Model Earth Quake Data with Python and Plotly
+# HackMIT2021 Learning How To Model Earthquake Data with Python and Plotly
 
 # sustainability and human health
 
