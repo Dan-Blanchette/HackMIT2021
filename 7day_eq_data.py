@@ -4,12 +4,12 @@ from plotly.graph_objects import Scattergeo, Layout
 from plotly import offline
 
 # Explore the structure of the data.
-filename = 'data/significant.json'
+filename = 'data/significant7.json'
 with open(filename) as f:
     all_eq_data = json.load(f)
 
 all_eq_dicts = all_eq_data['features']
-# print(len(all_eq_dicts))
+
 
 mags, longi, lats, hover_texts = [] ,[], [], []
 for eq_dict in all_eq_dicts:
@@ -38,7 +38,4 @@ data = [{
 my_layout = Layout(title='Global Earthquakes')
 
 fig = {'data' : data, 'layout' : my_layout}
-offline.plot(fig, filename='global_earthquakes.html')
-#print(mags[:10])
-#print(longi[:5])
-#print(lats[:5])
+offline.plot(fig, filename='html/global_earthquakes7.html')
